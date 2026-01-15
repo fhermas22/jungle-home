@@ -3,28 +3,34 @@ function App() {
   return (
     <>
       <Banner />
+      <Card />
     </>
   )
 }
 
 function Banner() {
+  const title = "la maison jungle";
+
+  return (
+    <h1>{title.toUpperCase()}</h1>
+  )
+}
+
+function Card() {
+  const monsteraPrice = 8
+  const ivyPrice = 10
+  const flowerPrice = 15
+
   return (
     <div>
-      <Header />
-      <Description />
+      <h2>Panier</h2>
+      <ul>
+        <li>Monstera : {monsteraPrice}€</li>
+        <li>Lierre : {ivyPrice}€</li>
+        <li>Fleurs : {flowerPrice}€</li>
+      </ul>
+      Total : {monsteraPrice + ivyPrice + flowerPrice }€
     </div>
-  )
-}
-
-function Header() {
-  return (
-    <h1>La maison jungle</h1>
-  )
-}
-
-function Description() {
-  return (
-    <p>Ici achetez toutes les plantes dont vous avez toujours rêvé 🌵🌱🎍</p>
   )
 }
 
