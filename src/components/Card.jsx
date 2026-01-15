@@ -1,21 +1,3 @@
-
-function App() {
-  return (
-    <>
-      <Banner />
-      <Card />
-    </>
-  )
-}
-
-function Banner() {
-  const title = "la maison jungle";
-
-  return (
-    <h1>{title.toUpperCase()}</h1>
-  )
-}
-
 function Card() {
   const monsteraPrice = 8
   const ivyPrice = 10
@@ -34,4 +16,4 @@ function Card() {
   )
 }
 
-export default App
+export default Card
